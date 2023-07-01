@@ -1,11 +1,10 @@
 import os
-
 from pathlib import Path
 
 from dotenv import load_dotenv
 
-
 load_dotenv()
+
 STR_SECRET_KEY = os.getenv('STR_SECRET_KEY')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
