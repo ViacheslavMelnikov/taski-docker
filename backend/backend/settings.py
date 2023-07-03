@@ -5,11 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-STR_SECRET_KEY = os.getenv('STR_SECRET_KEY')
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = STR_SECRET_KEY
+SECRET_KEY = str(os.getenv('STR_SECRET_KEY'))
 
 DEBUG = True
 
